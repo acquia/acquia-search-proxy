@@ -1,3 +1,7 @@
 build
+conf/*
+!conf/config.yml.dist
 composer.lock
+log/*
+!log/.placeholder
 vendor
