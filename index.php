@@ -1,6 +1,5 @@
 <?php
 
-use PSolr\Request as Request;
 use Acquia\Search\Proxy\Response as Response;
 
 /* @var $app \Silex\Application */

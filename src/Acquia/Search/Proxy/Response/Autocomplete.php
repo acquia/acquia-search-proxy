@@ -2,6 +2,8 @@
 
 namespace Acquia\Search\Proxy\Response;
 
+use PSolr\Request as Request;
+
 /**
  * @method \Acquia\Search\Proxy\Response\Autocomplete factory(\Silex\Application $app)
  */

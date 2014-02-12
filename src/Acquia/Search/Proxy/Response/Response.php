@@ -26,7 +26,7 @@ class Response
      */
     public static function factory(Application $app)
     {
-        return static::__construct($app);
+        return new static($app);
     }
 
     /**
