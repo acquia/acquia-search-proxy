@@ -15,7 +15,8 @@
     },
     "require": {
         "php": ">=5.3.0",
-        "acquia/acquia-sdk-php-search": "*",
+        "acquia/acquia-sdk-php-network": ">=0.7",
+        "acquia/acquia-sdk-php-search": ">=0.7",
         "igorw/config-service-provider": "~1.0",
         "monolog/monolog": "~1.0",
         "silex/silex": "~1.1"
