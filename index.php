@@ -1,6 +1,7 @@
 <?php
 
 use PSolr\Request as Request;
+use Acquia\Search\Proxy\Response as Response;
 
 /* @var $app \Silex\Application */
 $app = require 'bootstrap.php';
@@ -10,7 +11,7 @@ $app = require 'bootstrap.php';
  */
 $app->get('/', function () use ($app) {
     return $app->json(array(
-        'status' => 'ok',
+        'status'  => 'ok',
         'message' => 'Acquia Search Proxy',
     ));
 });
@@ -19,17 +20,7 @@ $app->get('/', function () use ($app) {
  * Autocomplete
  */
 $app->get('/autocomplete/{query}', function ($query) use ($app) {
-
-    $result = Request\Suggest::factory()
-        ->setQuery($query)
-        ->sendRequest($app['acquia.search'])
-    ;
-
-    return $app->json(array(
-        'status' => 'ok',
-        'suggestions' => $result->suggestions(),
-        'recommendation' => $result->collation(),
-    ));
+    return Response\Autocomplete::factory($app)->send($query);
 });
 
 
