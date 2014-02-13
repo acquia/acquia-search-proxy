@@ -1,0 +1,5 @@
+
+acquia.search.proxy.identifier: XXXX-XXXXX
+acquia.search.proxy.auth_file:  %root_dir%/conf/indexes.json
+
+monolog.logfile: %root_dir%/log/acquia-search-proxy.log

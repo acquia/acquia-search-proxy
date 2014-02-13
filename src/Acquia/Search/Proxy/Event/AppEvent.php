@@ -1,10 +1,11 @@
 <?php
 
-namespace Acquia\Search\Proxy\Response;
+namespace Acquia\Search\Proxy\Event;
 
 use Silex\Application;
+use Symfony\Component\EventDispatcher\Event;
 
-class Response
+class AppEvent extends Event
 {
     /**
      * @var \Silex\Application
@@ -20,19 +21,9 @@ class Response
     }
 
     /**
-     * @param \Silex\Application $app
-     *
-     * @return \Acquia\Search\Proxy\Response\Response
-     */
-    public static function factory(Application $app)
-    {
-        return new static($app);
-    }
-
-    /**
      * @return \Silex\Application
      */
-    public function getApplication()
+    public function getApp()
     {
         return $this->app;
     }

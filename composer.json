@@ -1,7 +1,4 @@
 {
-    "name": "acquia/acquia-search-proxy",
-    "type": "library",
-    "description": "A web services proxy for the Acquia Search service",
     "homepage": "https://github.com/acquia/acquia-search-proxy",
     "license": "MIT",
     "authors": [
@@ -19,7 +16,8 @@
         "acquia/acquia-sdk-php-search": ">=0.7",
         "igorw/config-service-provider": "~1.0",
         "monolog/monolog": "~1.0",
-        "silex/silex": "~1.1"
+        "silex/silex": "~1.1",
+        "symfony/yaml": "~2.0"
     },
     "require-dev": {
         "pdepend/pdepend": "~1.0",

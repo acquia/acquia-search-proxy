@@ -5,7 +5,9 @@
 [![Total Downloads](https://poser.pugx.org/acquia/acquia-search-proxy/downloads.png)](https://packagist.org/packages/acquia/acquia-search-proxy)
 [![Latest Stable Version](https://poser.pugx.org/acquia/acquia-search-proxy/v/stable.png)](https://packagist.org/packages/acquia/acquia-search-proxy)
 
-@todo
+This project is a web services proxy to the Acquia Search Service. It allows
+developers to expose a RESTful API to end users, build administrative interfaces,
+etc.
 
 ## Installation
 
@@ -25,4 +27,7 @@ for more detailed installation and usage instructions.
 
 ## Usage
 
-@todo
+Copy the `index.php.example` file to `index.php` and modify accordingly.
+
+Acquia Search Proxy is build with the [Silex](http://silex.sensiolabs.org/)
+micro framework, so the documentation applies here.
