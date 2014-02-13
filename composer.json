@@ -1,4 +1,7 @@
 {
+    "name": "acquia/acquia-search-proxy",
+    "type": "project",
+    "description": "A web services proxy for the Acquia Search service",
     "homepage": "https://github.com/acquia/acquia-search-proxy",
     "license": "MIT",
     "authors": [

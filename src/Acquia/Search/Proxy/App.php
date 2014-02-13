@@ -30,7 +30,8 @@ class App
         // our Acquia Search indexes.
         $app->register(new \Acquia\Search\Proxy\Silex\AcquiaSearchIndexProvider());
 
-        // Dispatch the "" event so that developers can hook into the bootstrap process.
+        // Dispatch the "acquia.search.proxy.bootstrap" event so that developers
+        // can hook into the bootstrap process and add their providers.
         $event = new Event\AppEvent($app);
         $app['dispatcher']->dispatch(AppEvents::BOOTSTRAP, $event);
 
