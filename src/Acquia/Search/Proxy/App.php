@@ -11,7 +11,6 @@ class App
     {
         $config += array('root_dir'  => __DIR__ . '/../../../..');
         $config += array('conf_file' => $config['root_dir'] . '/conf/config.yml');
-        $config += array('auth_file' => $config['root_dir'] . '/conf/search.json');
 
         $app = new \Silex\Application;
 
