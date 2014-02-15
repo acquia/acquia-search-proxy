@@ -11,7 +11,7 @@ for their Acquia Search indexes, etc.
 * Run `php composer.phar install` in the project's root directory
   * Refer to [Composer's documentation](https://github.com/composer/composer/blob/master/doc/00-intro.md#introduction) for more details.
 * Choose a configuration file directory (referred to as `CONF_DIR` below)
-  * The `./conf` directory
+  * The `./conf` directory in the project's root can be used
 * Run the command line tool to authenticate the indexes you want to use
   * `./bin/acquia-search-proxy indexes:auth CONF_DIR/indexes.json`
 * Copy `./conf/conf.yml.dist` to `CONF_DIR/conf.yml` and modify accordingly
