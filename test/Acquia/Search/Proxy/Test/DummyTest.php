@@ -2,7 +2,7 @@
 
 namespace Acquia\Search\Proxy\Test;
 
-use Acquia\Search\Proxy\AcquiaSearchProxy;
+use Acquia\Search\Proxy\App;
 
 class DummyTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,7 +14,7 @@ class DummyTest extends \PHPUnit_Framework_TestCase
      */
     public function testAutoload()
     {
-        $class = new AcquiaSearchProxy();
-        $this->assertTrue($class->autoloaded());
+        $app = new App();
+        $this->assertTrue(true);
     }
 }

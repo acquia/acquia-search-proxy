@@ -16,8 +16,7 @@ class AcquiaSearchIndexProvider implements ServiceProviderInterface
         });
 
         $app['acquia.search.index'] = $app->share(function ($app) {
-            $basename = pathinfo($app['acquia.search.proxy.auth_file'], PATHINFO_BASENAME);
-            $group = preg_replace('/\\.json$/', '', $basename);
+            $group = basename($app['acquia.search.proxy.auth_file'], '.json');
             return $app['acquia.search.indexes']->getClient($group, $app['acquia.search.proxy.identifier']);
         });
     }
