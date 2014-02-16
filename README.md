@@ -21,5 +21,5 @@ for their Acquia Search indexes, etc.
 Acquia Search Proxy is build with the [Silex](http://silex.sensiolabs.org/)
 micro framework, so the documentation applies here.
 
-Refer to the [Acquia SDK for PHP](http://github.com/cpliakas/acquia-sdk-php) and
+Refer to the [Acquia SDK for PHP](http://github.com/acquia/acquia-sdk-php) and
 [PSolr](http://github.com/cpliakas/psolr) projects for code examples.
