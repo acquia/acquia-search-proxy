@@ -2,7 +2,7 @@
 
 namespace Acquia\Search\Proxy\Console;
 
-use Acquia\Common\AcquiaServiceManager;
+use Acquia\Rest\ServiceManager;
 use Acquia\Common\Services;
 use Acquia\Network\AcquiaNetworkClient;
 use Acquia\Search\AcquiaSearchService;
@@ -63,7 +63,7 @@ class AuthIndexesCommand extends Command
         $subscription = $network->checkSubscription($acquiaServices);
         $search = AcquiaSearchService::factory($subscription);
 
-        $services = new AcquiaServiceManager(array(
+        $services = new ServiceManager(array(
             'conf_dir' => dirname($configFile),
         ));
 

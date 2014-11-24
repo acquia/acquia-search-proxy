@@ -10,7 +10,7 @@ class AcquiaSearchIndexProvider implements ServiceProviderInterface
     public function register(Application $app)
     {
         $app['acquia.search.indexes'] = $app->share(function ($app) {
-            return new \Acquia\Common\AcquiaServiceManager(array(
+            return new \Acquia\Rest\ServiceManager(array(
                 'conf_dir' => dirname($app['acquia.search.proxy.auth_file'])
             ));
         });
