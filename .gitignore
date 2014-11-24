@@ -1,7 +1,8 @@
 build
+composer.lock
 conf/*
 !conf/config.yml.dist
-composer.lock
+!conf/.htaccess
 log/*
-!log/.placeholder
+!log/.htaccess
 vendor
