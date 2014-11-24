@@ -9,7 +9,7 @@ class App
      */
     static public function bootstrap(array $config = array())
     {
-        $config += array('root_dir'  => __DIR__ . '/../../../..');
+        $config += array('root_dir'  => __DIR__ . '/..');
         $config += array('conf_file' => $config['root_dir'] . '/conf/config.yml');
 
         $app = new \Silex\Application;

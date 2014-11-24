@@ -5,7 +5,3 @@ if (!file_exists($autoloadFile)) {
     throw new RuntimeException('Install dependencies to run phpunit.');
 }
 require_once $autoloadFile;
-
-$loader = new \Composer\Autoload\ClassLoader();
-$loader->add('Acquia\Search\Proxy\Test', 'test');
-$loader->register();

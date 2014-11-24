@@ -32,8 +32,13 @@
         "sebastian/phpcpd": "~2.0"
     },
     "autoload": {
-        "psr-0": {
-            "Acquia\\Search\\Proxy": "src/"
+        "psr-4": {
+            "Acquia\\Search\\Proxy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acquia\\Search\\Proxy\\Test\\": "test/"
         }
     }
 }
