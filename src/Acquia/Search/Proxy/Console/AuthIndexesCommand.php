@@ -25,7 +25,7 @@ class AuthIndexesCommand extends Command
                 'Path to the .json that will store the index credentials'
             )
             ->addOption(
-               'identifer',
+               'identifier',
                null,
                InputOption::VALUE_REQUIRED,
                'The subscription\'s Acquia Network identifier, e.g. ABCD-12345'
@@ -47,7 +47,7 @@ class AuthIndexesCommand extends Command
         }
 
         $dialog = $this->getHelperSet()->get('dialog');
-        if (!$identifier = $input->getOption('identifer')) {
+        if (!$identifier = $input->getOption('identifier')) {
             $identifier = $dialog->ask($output, 'Acquia Network Identifier: ');
         }
         if (!$key = $input->getOption('key')) {
