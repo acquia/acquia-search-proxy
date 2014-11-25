@@ -21,7 +21,10 @@ for their Acquia Search indexes, etc.
   * `./bin/acquia-search-proxy indexes:auth CONF_DIR/indexes.json`
 * Copy `./conf/conf.yml.dist` to `CONF_DIR/conf.yml` and modify accordingly
   * Set `acquia.search.proxy.auth_file` to `CONF_DIR/indexes.json`
-* Copy `index.php.example` file to `index.php` and modify accordingly
+* Copy `docroot/index.php.example`to `docroot/index.php` and modify accordingly
+
+For development, run `php -S localhost:3000 -t docroot/` to start the service,
+and visit `http://localhost:3000` to consume it.
 
 Acquia Search Proxy is build with the [Silex](http://silex.sensiolabs.org/)
 micro framework, so the documentation applies here.
