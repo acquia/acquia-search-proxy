@@ -1,5 +1,10 @@
 # Acquia Search Proxy
 
+[![Build Status](https://travis-ci.org/acquia/acquia-search-proxy.svg?branch=master)](https://travis-ci.org/acquia/acquia-search-proxy)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/acquia/acquia-search-proxy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/acquia/acquia-search-proxy/?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/acquia/acquia-search-proxy/v/stable.png)](https://packagist.org/packages/acquia/acquia-search-proxy)
+[![License](https://poser.pugx.org/acquia/acquia-search-proxy/license.svg)](https://packagist.org/packages/acquia/acquia-search-proxy)
+
 This project is a web service proxy to the Acquia Search Service. It allows
 developers to expose a RESTful API to end users, build administrative interfaces
 for their Acquia Search indexes, etc.
