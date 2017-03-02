@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/New_York');
+
 require '../vendor/autoload.php';
 
 $app = Acquia\Search\Proxy\App::bootstrap(array(
