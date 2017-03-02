@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 $app = Acquia\Search\Proxy\App::bootstrap(array(
     //'conf_file' => __DIR__ . '/conf/config.yml',
