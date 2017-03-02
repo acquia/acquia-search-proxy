@@ -6,4 +6,4 @@ conf/*
 log/*
 !log/.htaccess
 vendor
-index.php
+docroot/index.php
