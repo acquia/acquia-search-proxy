@@ -7,3 +7,5 @@ log/*
 !log/.htaccess
 vendor
 docroot/index.php
+# IDE settings
+.idea
